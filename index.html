@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#170d1c">
+<title>For My Janna ♡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap');
+:root{--ink:#fff4f6;--muted:#d9bdca;--rose:#ff7caa;--rose2:#ffb4c9;--night:#170d1c}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--night);color:var(--ink);font-family:'DM Sans',sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse at 15% 15%,#59213f 0,transparent 42%),radial-gradient(ellipse at 85% 75%,#3d1c46 0,transparent 45%),linear-gradient(145deg,#170d1c,#241020 55%,#100b19)}
+.noise{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.055;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E")}
+.progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,#ff7caa,#ffe0e9);z-index:20;box-shadow:0 0 14px #ff7caa}
+main{width:min(920px,92vw);margin:auto}.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:70px 20px;position:relative}
+.hero-inner{animation:rise 1.2s cubic-bezier(.2,.8,.2,1) both}.eyebrow{letter-spacing:.28em;text-transform:uppercase;font-size:.7rem;color:var(--rose2);font-weight:700}
+h1{font:600 clamp(3.1rem,10vw,7.3rem)/.98 'Playfair Display',serif;margin:22px 0 18px;letter-spacing:-.055em}h1 em{color:var(--rose2);font-weight:500}.sub{color:var(--muted);font-size:clamp(.95rem,2vw,1.08rem);letter-spacing:.04em}
+.seal{width:92px;height:92px;border:1px solid #ff9fbd88;border-radius:50%;display:grid;place-items:center;margin:34px auto 28px;color:var(--rose2);font-size:2rem;box-shadow:0 0 50px #ff7caa22,inset 0 0 25px #ff7caa13;animation:pulse 3s ease-in-out infinite}
+.open-btn{border:1px solid #ff9fbd88;color:#fff;background:linear-gradient(120deg,#a83c68,#6d294e);border-radius:999px;padding:15px 27px;font:600 .9rem 'DM Sans';letter-spacing:.04em;cursor:pointer;box-shadow:0 12px 40px #0005;transition:.3s}
+.open-btn:hover{transform:translateY(-4px);box-shadow:0 18px 45px #ff7caa33}.open-btn:disabled{opacity:.8;cursor:default}.hint{font-size:.75rem;color:#b995a7;margin-top:17px}
+.scroll{position:absolute;bottom:25px;font-size:.7rem;letter-spacing:.2em;color:#caaaba;text-transform:uppercase}.scroll:after{content:"";display:block;width:1px;height:35px;background:linear-gradient(var(--rose),transparent);margin:12px auto 0}
+.letter-wrap{padding:30px 0 110px;opacity:0;transform:translateY(50px);transition:opacity 1s ease,transform 1s cubic-bezier(.2,.8,.2,1);pointer-events:none}.letter-wrap.visible{opacity:1;transform:none;pointer-events:auto}
+.letter-card{position:relative;border:1px solid #ffc0d326;border-radius:28px;padding:clamp(24px,6vw,64px);background:linear-gradient(145deg,#ffffff0d,#ffffff04);box-shadow:0 30px 100px #0005;backdrop-filter:blur(18px);overflow:hidden}
+.letter-card:before{content:"";position:absolute;inset:0 auto 0 0;width:3px;background:linear-gradient(transparent,var(--rose),transparent);opacity:.8}
+.letter-top{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:35px;color:var(--rose2);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase}
+.heart-mark{font-size:1.3rem;animation:pulse 2.4s infinite}.letter{white-space:pre-wrap;overflow-wrap:anywhere;font:400 clamp(.98rem,2.1vw,1.12rem)/1.95 'DM Sans',sans-serif;color:#ffedf2}
+.end-note{text-align:center;padding:55px 10px 0;color:#dcbac9;font:italic 1.2rem 'Playfair Display',serif}.end-note span{display:block;color:var(--rose2);font-size:2rem;margin-top:15px}
+footer{text-align:center;padding:0 20px 38px;color:#987b8b;font-size:.72rem;letter-spacing:.12em}.floating{position:fixed;bottom:-40px;z-index:0;pointer-events:none;animation:floatUp linear forwards;opacity:0;color:#ff9fbd}
+.spark{position:fixed;width:3px;height:3px;border-radius:50%;background:#ffd8e5;box-shadow:0 0 12px 3px #ffb5cf66;pointer-events:none;animation:twinkle 3s ease-in-out infinite}
+@keyframes rise{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}@keyframes pulse{0%,100%{transform:scale(1);box-shadow:0 0 35px #ff7caa1c}50%{transform:scale(1.06);box-shadow:0 0 55px #ff7caa40}}
+@keyframes floatUp{0%{transform:translateY(0) rotate(0deg);opacity:0}10%{opacity:.6}90%{opacity:.45}100%{transform:translateY(-115vh) rotate(35deg);opacity:0}}
+@keyframes twinkle{0%,100%{opacity:.15;transform:scale(.7)}50%{opacity:.8;transform:scale(1.5)}}
+@media(max-width:600px){.letter-card{border-radius:20px}.letter-top{font-size:.62rem}.hero{min-height:92svh}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="noise"></div><div class="progress" id="progress"></div>
+<section class="hero"><div class="hero-inner">
+<div class="eyebrow">A little something from my heart</div><h1>For my <em>Janna</em></h1>
+<p class="sub">Some feelings deserve their own little world.</p><div class="seal">♡</div>
+<button class="open-btn" id="openBtn">Open your letter <span aria-hidden="true">↗</span></button>
+<div class="hint">Best opened with a little time and a soft heart</div>
+</div><div class="scroll">Scroll gently</div></section>
+<main><section class="letter-wrap" id="letterSection"><article class="letter-card">
+<div class="letter-top"><span>A letter, just for you</span><span class="heart-mark">♡</span></div>
+<div class="letter">hii janna last msg 1/11/26 ko kia taha zyada wkt hogyaa and ik and losten i’m not writting this coz of ladhia ya kuh mujhe genuine likhna tha jo maine feeel kia ha apke le 3 saalo mai beshak humara rishta salon purana hai lekin jo is janam mai 3 saal apke sath bityae ha wo best hoge beshak mai kal zinda rah ya nai lekin haan i can proudly say that ki mereko sabse khubsurat sundar intelligent pyaar krne walo golu molu ctue se horny sexy hawt adorable killer and loving biiwiiw mili ha and yk janan rohan is so much attracted to u/ 
+like for the one and only reaosn is u!!!
+bachu meri gudiya maine apko bahot pareshan kia hai ik 
+bahot bla bura bhala lkein meri jaan ajj tk maine apko good digger nai bola mera bacha 
+band how can i say this type tattti sa word to u my love?
+Listen apna meri maa ho meri best mumma ho app ap jaisa pyaar krti hona man krta god ma bs sir rkhu sou rou puchi leke ginti krte krte bhul jau
+i love your lap ur thighs ur face jo mail let ke dekh skta hu and mere do sundar sundar se aam jinhe ma khaa skta hu sab kuch .!!>!>!>!
+jaaan meri gudiya mera bacha meri zindgai meri dhadkan trust me u r the bets?
+haan!!
+and haan ap best ho maine apke pyaar pe shakk nai kia !!
+meri jaan aur haan parso bulaya ha maa ki apki and u have to tursut me belove me kuch nai hoga?
+sorry mera bacha meri wajha se ap trouble ma ajate ho i’m soryryr for everything babu		
+lekin haan kuch nai hoga mauha iloveuhsomcunja hau bhi to handle krlege bs sath mt shodna kabhi marte dum tk 
+sath rehna kuch bhi hojaye 
+IK I’M RED FLAG FOREST 
+COZ GREEN FLAG FOREST JAISA ROHAN MAI KCH NAI HAI
+useless hun
+apko smjta nai hun
+and haan smjh chuka hu zyada possesiveness ladkio ko psnd nai hai
+overthink rkna wala 
+insecure krne wala 
+jelousy krne wala
+mai yeh sab change nai kr skta khud mai but haan
+apko door rkh skta hun in sabse 
+kyui app yeh sab expalin krte krte khud ko shakk krne lag jate jho
+apki koi galti nai aha
+I’M SORRY TO THE BOTTOM OF MY HEART LOVE
+I’M SORRY
+AND HAAN PARESHAN MT HONA
+SUNO MERI. BAAT ..
+APKE PAPA MUMMA WALI BAAT I’M SORRYY
+FAMILY HTI HA MAI SMJHTA NAI HUN 
+I’M SORYRY FOR THAT
+ND IK U LOVE ME 
+MUAHUA  ILOVEUHSOMCUHJNA BACHA MERA BS GHAR AJOA JLDI SE I’M WAITING 
+APKA PYAAR CHAIYE JEENA MUSHKIL HO CHUKA HA MERA APKE PYAAR KE BINA
+SORRY FOR EVERYTHING 
+AND IK JO MAI BOL RHA HU ISPE APKO FIR SHIKAYAT MILEG AJ KAL PARSO KABHI BHI MAI DEETH HUN KUTTE 
+KI DUM JAISE MAUHA
+ILOBVEHSOMCNHNAJNJA
+BUT PLEASE NEVER LEAVE ME MAUHAUAUAUHA
+ILOVUHSOMCUHNAA ERI JANAJNA MUAHUAHA</div>
+<div class="end-note">With all the love I have in me <span>♡</span></div>
+</article></section></main>
+<footer>MADE WITH LOVE · ONLY FOR YOU</footer>
+<script>
+const openBtn=document.getElementById('openBtn'),letter=document.getElementById('letterSection');
+openBtn.addEventListener('click',()=>{letter.classList.add('visible');setTimeout(()=>letter.scrollIntoView({behavior:'smooth',block:'start'}),100);openBtn.textContent='Your letter is open ♡';openBtn.disabled=true;});
+window.addEventListener('scroll',()=>{const max=document.documentElement.scrollHeight-window.innerHeight;document.getElementById('progress').style.width=(max>0?window.scrollY/max*100:0)+'%';});
+function heart(){const el=document.createElement('div');el.className='floating';el.textContent=['♡','♥','✦','⋆'][Math.floor(Math.random()*4)];el.style.left=Math.random()*100+'vw';el.style.fontSize=(12+Math.random()*19)+'px';el.style.animationDuration=(8+Math.random()*8)+'s';document.body.appendChild(el);setTimeout(()=>el.remove(),17000);}
+setInterval(heart,850);for(let i=0;i<24;i++){const s=document.createElement('i');s.className='spark';s.style.left=Math.random()*100+'vw';s.style.top=Math.random()*100+'vh';s.style.animationDelay=(Math.random()*4)+'s';document.body.appendChild(s);}
+</script>
+</body></html>
